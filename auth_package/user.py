@@ -1,10 +1,10 @@
 import requests
 import json
-
+base_url = 'http://authpackage.pythonanywhere.com'
 
 def create_user(email:str, first_name:str, last_name:str, password:str, api_key:str):
 
-    url = "http://localhost:8000/user-api/"
+    url = f"{base_url}/user-api/"
 
     payload = json.dumps({
         "email": email,
@@ -23,7 +23,7 @@ def create_user(email:str, first_name:str, last_name:str, password:str, api_key:
 
 def user_list(api_key:str):
 
-    url = "http://localhost:8000/user-api/"
+    url = f"{base_url}/user-api/"
 
     payload = {}
     headers = {
@@ -37,7 +37,7 @@ def user_list(api_key:str):
 
 def get_single_user(user_id:int, api_key:str):
 
-    url = f"http://localhost:8000/user-api/{user_id}/"
+    url = f"{base_url}/user-api/{user_id}/"
 
     payload = {}
     headers = {
@@ -51,7 +51,7 @@ def get_single_user(user_id:int, api_key:str):
 
 def delete_user(user_id:int, api_key:str):
  
-    url = "http://localhost:8000/delete-user/"
+    url = f"{base_url}/delete-user/"
 
     payload = json.dumps({
         "user_id": user_id
@@ -67,7 +67,7 @@ def delete_user(user_id:int, api_key:str):
 
 
 def authenticate_user(email:str, password:str, api_key:str):
-    url = "http://localhost:8000/authenticate-user/"
+    url = f"{base_url}/authenticate-user/"
 
     payload = json.dumps({
         "email": email,

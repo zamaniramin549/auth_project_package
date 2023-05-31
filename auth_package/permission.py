@@ -1,11 +1,13 @@
 import requests
 import json
 
+base_url = 'http://authpackage.pythonanywhere.com'
+
 
 
 def permission_list(api_key:str):
 
-    url = "http://localhost:8000/user-api-permission-name"
+    url = f"{base_url}/user-api-permission-name"
 
     payload = {}
     headers = {
@@ -18,7 +20,7 @@ def permission_list(api_key:str):
 
 
 def permission(permission_name:int, api_key:str):
-    url = "http://localhost:8000/user-api-permission-name/"
+    url = f"{base_url}/user-api-permission-name/"
     payload = json.dumps({
         "permission_name": permission_name
     })
@@ -39,7 +41,7 @@ def assign_user_permission(
         delete_permission:bool,
         api_key:str
     ):
-    url = "http://localhost:8000/user-api-permission/"
+    url = f"{base_url}/user-api-permission/"
 
     payload = json.dumps({
         "permission_id": int(permission_id),
@@ -68,7 +70,7 @@ def update_user_permission(
         api_key:str
         ):
 
-    url = f"http://localhost:8000/edit-user-permission/{permission_id}/"
+    url = f"{base_url}/edit-user-permission/{permission_id}/"
 
     payload = json.dumps({
         "read_permission": read_permission,
@@ -87,7 +89,7 @@ def update_user_permission(
 
 
 def delete_user_permission(permission_id:int, api_key:str):
-    url = "http://localhost:8000/delete-user-permission/"
+    url = f"{base_url}/delete-user-permission/"
 
     payload = json.dumps({
         "user_permission_id": permission_id
@@ -103,7 +105,7 @@ def delete_user_permission(permission_id:int, api_key:str):
 
 
 def delete_permission(permission_id:int, api_key:str):
-    url = "http://localhost:8000/delete-permission/"
+    url = f"{base_url}/delete-permission/"
 
     payload = json.dumps({
         "permission_id": permission_id
