@@ -8,7 +8,7 @@ setup(
   author = 'Ramin Zamanighiri',                   # Type in your name
   author_email = 'zamaniramin549@gmail.com',      # Type in your E-Mail
   url = 'https://www.ramzamani.com/',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/zamaniramin549/auth_project_package/archive/refs/tags/1.0.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/zamaniramin549/auth_project_package/archive/refs/tags/1.1.tar.gz',    # I explain this later on
   keywords = ['microservices', 'Auth package', 'API'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
           'requests',
