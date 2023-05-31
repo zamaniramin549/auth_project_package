@@ -1,9 +1,9 @@
 Metadata-Version: 2.1
 Name: auth-package
-Version: 1.2
+Version: 1.3
 Summary: Auth package for authentication with microservices
 Home-page: https://www.ramzamani.com/
-Download-URL: https://github.com/zamaniramin549/auth_project_package/archive/refs/tags/1.2.tar.gz
+Download-URL: https://github.com/zamaniramin549/auth_project_package/archive/refs/tags/1.3.tar.gz
 Author: Ramin Zamanighiri
 Author-email: zamaniramin549@gmail.com
 License: mit

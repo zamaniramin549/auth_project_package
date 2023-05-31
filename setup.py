@@ -2,13 +2,13 @@ from distutils.core import setup
 setup(
   name = 'auth_package',         # How you named your package folder (MyLib)
   packages = ['auth_package'],   # Chose the same as "name"
-  version = '1.2',      # Start with a small number and increase it with every change you make
+  version = '1.3',      # Start with a small number and increase it with every change you make
   license='mit',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'Auth package for authentication with microservices',   # Give a short description about your library
   author = 'Ramin Zamanighiri',                   # Type in your name
   author_email = 'zamaniramin549@gmail.com',      # Type in your E-Mail
   url = 'https://www.ramzamani.com/',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/zamaniramin549/auth_project_package/archive/refs/tags/1.2.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/zamaniramin549/auth_project_package/archive/refs/tags/1.3.tar.gz',    # I explain this later on
   keywords = ['microservices', 'Auth package', 'API'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
           'requests',
